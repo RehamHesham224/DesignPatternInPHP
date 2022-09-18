@@ -2,7 +2,11 @@
 
 namespace Creational\StaticFactory;
 
-class BENZCar
+class BENZCar implements Car
 {
-
+    public function model()
+    {
+        return "BENZ";
+        // TODO: Implement model() method.
+    }
 }

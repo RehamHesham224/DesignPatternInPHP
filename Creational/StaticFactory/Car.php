@@ -2,7 +2,7 @@
 
 namespace Creational\StaticFactory;
 
-class Car
+interface Car
 {
-
+    public function model();
 }
