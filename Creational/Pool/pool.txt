@@ -1,0 +1,2 @@
+Cost of intialize object high
+usage of instance low, but you usaually need many instance 
