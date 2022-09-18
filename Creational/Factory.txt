@@ -1,0 +1,11 @@
+Abstract Factory:
+All objects implement the same interface ,with multi functions for creation, can be inherited and mocked
+Static Factory:
+All objects implement the same interface ,with One Static functions for creation, can't be inherited and mocked
+
+
+Factory Method:
+Create an interface , but subclasses decide the instance "multi factory class inherit factory interface"
+
+Simple Factory Method:
+not using new keyword , there is a class to create an instance
