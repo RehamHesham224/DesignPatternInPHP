@@ -1,5 +1,5 @@
 <?php
-
+namespace Tests;
 
 use Creational\AbstractFactory\BMWCar;
 use \Creational\AbstractFactory\BenzCar;

@@ -1,6 +1,5 @@
 <?php
 
-namespace Tests;
 
 use Creational\StaticFactory\BENZCar;
 use Creational\StaticFactory\BMWCar;
