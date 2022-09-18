@@ -2,7 +2,12 @@
 
 namespace Creational\FactoryMethod;
 
-class BENZBrand
+class BENZBrand implements CarBrandInterface
 {
 
+    public function createBrand()
+    {
+        // TODO: Implement createBrand() method.
+        return "BENZBrand";
+    }
 }
