@@ -2,7 +2,11 @@
 
 namespace Creational\Prototype;
 
-class AutomaticCarPrototype
+class AutomaticCarPrototype extends  AbstractCarPrototype
 {
-
+    protected $model = "automaticCar";
+    public function __clone()
+    {
+        // TODO: Implement __clone() method.
+    }
 }

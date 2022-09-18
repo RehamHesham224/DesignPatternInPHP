@@ -1,0 +1,3 @@
+Create Standard Object to clone object, to avoid cost of creation
+There is: Shadow Copy , Deep Copy
+default: shadow
