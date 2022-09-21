@@ -2,7 +2,7 @@
 
 namespace Behavioural\Command;
 
-interface CommandInterface
+interface Command
 {
     public function execute();
 }
