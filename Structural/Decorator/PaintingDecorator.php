@@ -2,7 +2,7 @@
 
 namespace Strctural\Decorator;
 
-class PainitingDecorator implements PaintingInterface
+class PaintingDecorator implements PaintingInterface
 {
     /**
      * @param PaintingInterface $painting
