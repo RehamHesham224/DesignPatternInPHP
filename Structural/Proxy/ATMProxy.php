@@ -2,7 +2,11 @@
 
 namespace Strctural\Proxy;
 
-class ATMAccount
+class ATMProxy extends BankAccount implements BankAccountInterface
 {
-
+    //cache
+    private $balance = null;
+    public function getBalance(){
+        return $this->balance=parent::getBalance();
+    }
 }
