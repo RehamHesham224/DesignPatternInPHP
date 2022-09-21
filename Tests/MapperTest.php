@@ -5,8 +5,9 @@ namespace Tests;
 use PHPUnit\Framework\TestCase;
 use Strctural\Mapper\DataMapper;
 use Strctural\Mapper\StorageManager;
+use Strctural\Mapper\User;
 
-class Mapper extends TestCase
+class MapperTest extends TestCase
 {
     private StorageManager $manager;
     private array $data;
@@ -24,8 +25,11 @@ class Mapper extends TestCase
     }
 
     public function testCanSaveUserObject(){
+        $user=new User();
+        $user->setUsername('master');
+        $user->setPassword('123');
+        $user->setId(2);
         $dataMapper= new DataMapper($this->manager);
-        $user=$dataMapper->saveUser(1);
-        $this->assertEquals($this->data[1],$user);
+        $this->assertTrue($dataMapper->saveUser($user));
     }
 }
