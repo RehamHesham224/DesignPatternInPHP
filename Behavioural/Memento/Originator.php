@@ -17,9 +17,9 @@ class Originator
     }
     public function save():MementoInterface
     {
-        return new ConcreteMemento($this->codeFile);
+        return new ConcreteMemento(clone $this->codeFile);
     }
-    public function CtrlZ(MementoInterface $memento):MementoInterface
+    public function CtrlZ(MementoInterface $memento)
     {
         $this->codeFile = $memento->getSnapshot();
     }

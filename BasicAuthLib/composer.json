@@ -1,0 +1,17 @@
+{
+    "name": "reham/basic-auth-lib",
+    "type": "library",
+    "description": "test library for adapter",
+    "autoload": {
+        "psr-4": {
+            "BasicAuth\\": "BasicAuth/"
+        }
+    },
+    "authors": [
+        {
+            "name": "RehamHesham224",
+            "email": "rehamhesham680@gmail.com"
+        }
+    ],
+    "require": {}
+}

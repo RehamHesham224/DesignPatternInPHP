@@ -1,0 +1,38 @@
+{
+    "name": "reham.hesham/design-patterns",
+    "description": "code examples for design pattern in php",
+    "autoload": {
+        "psr-4": {
+            "Creational\\": "Creational/",
+            "Strctural\\": "Structural/",
+            "Behavioural\\": "Behavioural/",
+            "Tests\\": "Tests/",
+            "Others\\": "Others"
+        }
+    },
+    "authors": [
+        {
+            "name": "Reham Hesham"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "BasicAuthLib"
+        },
+        {
+            "type": "path",
+            "url": "TokenAuthLib"
+        }
+    ],
+    "require": {
+        "reham/basic-auth-lib": "*@dev",
+        "reham/token-auth-lib": "*@dev"
+    }
+}

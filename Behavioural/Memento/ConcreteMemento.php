@@ -4,6 +4,9 @@ namespace Behavioural\Memento;
 
 class ConcreteMemento implements MementoInterface
 {
+    /**
+     * @var CodeFile
+     */
     private CodeFile $codeFile;
 
     public function __construct(CodeFile $codeFile)
@@ -11,8 +14,8 @@ class ConcreteMemento implements MementoInterface
         $this->codeFile = $codeFile;
     }
 
-    public function getSnapshot()
+    public function getSnapShot()
     {
-       return $this->codeFile;
+        return $this->codeFile;
     }
 }

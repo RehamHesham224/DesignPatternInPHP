@@ -4,19 +4,26 @@ namespace Behavioural\Memento;
 
 class CareTracker
 {
+    /**
+     * @var Originator
+     */
     private Originator $originator;
-    private $mementos=[];
+
+    private $mementos = [];
 
     public function __construct(Originator $originator)
     {
         $this->originator = $originator;
     }
+
     public function commit()
     {
-        $this->mementos[]=$this->originator->save();
+        $this->mementos[] = $this->originator->save();
     }
-    public function rollBack(){
-        $mementos[]=array_pop($this->mementos);
-        $this->originator->CtrlZ($mementos);
+
+    public function rollBack()
+    {
+        $memento = array_pop($this->mementos);
+        $this->originator->CtrlZ($memento);
     }
 }
