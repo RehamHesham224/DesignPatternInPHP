@@ -1,13 +1,18 @@
 {
     "name": "reham.hesham/design-patterns",
     "description": "code examples for design pattern in php",
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Creational\\": "Creational/",
             "Strctural\\": "Structural/",
             "Behavioural\\": "Behavioural/",
-            "Tests\\": "Tests/",
             "Others\\": "Others"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "Tests/"
         }
     },
     "authors": [
@@ -32,7 +37,8 @@
         }
     ],
     "require": {
-        "reham/basic-auth-lib": "*@dev",
-        "reham/token-auth-lib": "*@dev"
-    }
+        "reham/basic-auth-lib": "dev-master",
+        "reham/token-auth-lib": "dev-master"
+    },
+    "license": ["MIT"]
 }
