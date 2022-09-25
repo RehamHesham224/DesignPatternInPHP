@@ -37,8 +37,8 @@
         }
     ],
     "require": {
-        "reham/basic-auth-lib": "dev-master",
-        "reham/token-auth-lib": "dev-master"
+        "reham/basic-auth-lib": "dev-main",
+        "reham/token-auth-lib": "dev-main"
     },
     "license": ["MIT"]
 }
